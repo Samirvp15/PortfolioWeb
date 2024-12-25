@@ -82,14 +82,14 @@ export default function Homepage() {
             </p>
 
             <div className="flex gap-4">
-              <button className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg dark:bg-white dark:text-gray-900">
+              <button className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg">
                 <Download size={20} />
                 Descargar CV
               </button>
-              <button className="p-2 bg-gray-100 rounded-lg shadow-slate-900 shadow-sm">
+              <button className="p-2 bg-white rounded-lg border border-r-4 border-b-4 border-black dark:border-gray-400">
                 <Github size={24} />
               </button>
-              <button className="p-2 bg-gray-100 rounded-lg shadow-slate-900 shadow-sm">
+              <button className="p-2 bg-white rounded-lg border border-r-4 border-b-4 border-black dark:border-gray-400">
                 <Linkedin size={24} />
               </button>
             </div>
