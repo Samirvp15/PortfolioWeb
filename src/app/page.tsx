@@ -1,9 +1,11 @@
 "use client"
 
-import { Moon, Sun, Download, Github, Linkedin, Briefcase } from "lucide-react";
-import Link from "next/link";
+import About from "@/components/About";
+import Header from "@/components/Header";
+import { Briefcase, Wifi } from "lucide-react";
 
 import { useState } from "react";
+
 
 
 export default function Homepage() {
@@ -36,83 +38,24 @@ export default function Homepage() {
     }
   ];
 
+
   return (
-    <div className="min-h-screen dark:bg-gray-900">
-      <nav className="sticky top-0 flex justify-around items-center py-4 px-6 bg-white dark:bg-gray-900 shadow-sm z-50">
-        <div className="text-xl font-bold dark:text-white">
-          Salex
-          <span className="text-blue-600">&lt;Dev /&gt;</span>
-        </div>
-
-        <div className="flex gap-6 font-bold dark:text-white">
-          <Link href="#about" className="hover:text-blue-600 dark:hover:text-blue-500">Acerca de mí</Link>
-          <Link href="#experience" className="hover:text-blue-600 dark:hover:text-blue-500">Experiencias</Link>
-          <Link href="#projects" className="hover:text-blue-600 dark:hover:text-blue-500">Proyectos</Link>
-          <Link href="#certifications" className="hover:text-blue-600 dark:hover:text-blue-500">Certificaciones</Link>
-        </div>
-
-        <div className="flex items-center gap-4">
-          {/* <span>🇲🇽 Español (MX)</span> */}
-          <button
-            onClick={toggleDarkMode}
-            className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-          >
-            {darkMode ? <Sun color="#ffffff" size={25} /> : <Moon size={25} />}
-          </button>
-        </div>
-      </nav>
+    <div className="min-h-screen bg-slate-100 dark:bg-gray-900">
+      {/**HEADER */}
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
       <main className="container mx-auto px-6 py-12">
         <div className="flex flex-col items-center justify-between">
-          {/** about */}
-          <section id="about" className="space-y-6 max-w-3xl scroll-smooth focus:scroll-auto">
-            <h1 className="text-6xl font-bold dark:text-white">
-              Hola Mundo<span className="inline-block animate-bounce">👋</span>
-              <br />
-              Soy <span className="text-purple-700 dark:text-purple-500">Samir Alexander</span>
-            </h1>
+          {/** ABOUT */}
+          <About darkMode={darkMode} />
 
-            <p className="text-lg text-gray-600 dark:text-gray-300">
-              Soy desarrollador Full Stack con experiencia en Front-End y Back-End.
-              Me especializo en crear interfaces dinámicas utilizando React y Next.js,
-              y desarrollar soluciones robustas con Node.js y Express. Comprometido con 
-              el aprendizaje continuo, me satisface brindar soluciones a traves de propuestas innovadoras para
-              un verdadero impacto en la experiencia de los usuarios.
-              
-            </p>
-
-            <div className="flex gap-4">
-              <button className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg">
-                <Download size={20} />
-                Descargar CV
-              </button>
-              <button className="p-2 bg-white rounded-lg border border-r-4 border-b-4 border-black dark:border-gray-400">
-                <Github size={24} />
-              </button>
-              <button className="p-2 bg-white rounded-lg border border-r-4 border-b-4 border-black dark:border-gray-400">
-                <Linkedin size={24} />
-              </button>
-            </div>
-
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 pt-8">
-              {['Angular', 'Vue.js', 'Tailwind', 'Bootstrap', 'Nest.js', 'Laravel',
-                'Node.js', 'Express', 'PHP', 'MySQL', 'Firebase', 'MongoDB'].map((tech) => (
-                  <div
-                    key={tech}
-                    className="flex items-center gap-2 p-2 border border-dashed rounded-lg hover:border-blue-500 transition-colors"
-                  >
-                    {tech}
-                  </div>
-                ))}
-            </div>
-          </section>
-          {/** experience */}
+          {/** EXPERIENCE */}
           <section id="experience">
-            <div className="min-h-screen bg-white dark:bg-gray-900 py-12">
+            <div className="min-h-screen bg-slate-100 dark:bg-gray-900 mt-10 py-16">
               <div className="container mx-auto px-6">
-                <h1 className="text-5xl font-bold text-center mb-4">Experiencias</h1>
-                <p className="text-center text-gray-600 dark:text-gray-300 mb-12">
-                  Explora mi trayectoria: donde la experiencia se transforma en resultados excepcionales.
+                <h1 className="text-6xl font-bold text-center mb-4 dark:text-white">Experiencias</h1>
+                <p className=" italic text-center text-gray-600 dark:text-gray-300 mb-12">
+                  {'"Cada desafío es una lección y una oportunidad de crecimiento."'}
                 </p>
 
                 <div className="space-y-12">
@@ -134,7 +77,7 @@ export default function Homepage() {
                             </h3>
                             <div className="text-gray-600 dark:text-gray-400 flex items-center gap-4 mt-1">
                               <span>📅 {exp.period}</span>
-                              <span>📍 {exp.type}</span>
+                              <Wifi width={18} height={18} /> {exp.type}
                             </div>
                           </div>
                           {/* <Image
