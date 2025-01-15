@@ -25,14 +25,14 @@ export default function About({ darkMode }: AboutProps) {
       </p>
 
       <div className=" flex gap-4 justify-center sm:justify-start flex-row items-center flex-wrap">
-        <a href="/cv.pdf" download={'cv.pdf'} className="flex items-center gap-2 px-4 py-2 font-bold bg-white text-black hover:bg-indigo-600 hover:text-white border-2 border-r-4 border-b-4 border-black dark:border-gray-400 rounded-lg">
+        <a href="/cv.pdf" download={'cv.pdf'} className="flex items-center gap-2 px-4 py-2 font-bold bg-white text-black hover:bg-indigo-600 hover:text-white border-2 border-r-4 border-b-4 border-black dark:border-gray-400 rounded-lg  transition-colors">
           <Download size={20} />
           Descargar CV
         </a>
-        <a href={'https://github.com/Samirvp15'} target="_blank" className="p-2 bg-white rounded-lg border-2 border-r-4 border-b-4 border-black hover:bg-purple-600 hover:text-white dark:border-gray-400">
+        <a href={'https://github.com/Samirvp15'} target="_blank" className="p-2 bg-white rounded-lg border-2 border-r-4 border-b-4 border-black hover:bg-purple-600 hover:text-white dark:border-gray-400  transition-colors">
           <Github size={24} />
         </a>
-        <a href={'https://www.linkedin.com/in/samir-alexander-vergara-pastor-590321317/'} target="_blank" className="p-2 bg-white rounded-lg border-2 border-r-4 border-b-4 border-black hover:bg-blue-600 hover:text-white dark:border-gray-400">
+        <a href={'https://www.linkedin.com/in/samir-alexander-vergara-pastor-590321317/'} target="_blank" className="p-2 bg-white rounded-lg border-2 border-r-4 border-b-4 border-black hover:bg-blue-600 hover:text-white dark:border-gray-400  transition-colors">
           <Linkedin size={24} />
         </a>
       </div>
