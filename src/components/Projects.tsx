@@ -24,8 +24,16 @@ const projects = [
         title: "REST API Node-React-TS",
         description: "Implementé una REST API con Node.js y Express.js, utilizando TypeScript para el desarrollo de la API. La API permite realizar operaciones CRUD usando Docker para la creacion de un contenedor PostgreSQL y se integra con un frontend desarrollado en React.",
         images: ["/restapi-ts-node5.png", "/restapi-ts-node6.png", "/restapi-ts-node.png", "/restapi-ts-node2.png", "/restapi-ts-node3.png", "/restapi-ts-node4.png"],
-        technologies: ["React", "Tailwind", "Node.js", "Express.js", "PostgreSQL","Swagger", "Sequelize" ,"Docker"],
+        technologies: ["React", "Tailwind", "Node.js", "Express.js", "PostgreSQL", "Swagger", "Sequelize", "Docker"],
         github: "https://github.com/Samirvp15/FrontendPERN-NodeTS",
+        demo: "#"
+    },
+    {
+        title: "REST API Node-React-TS",
+        description: "Usando Nextjs y TypeScript, desarrollé una aplicación web que permite realizar operaciones CRUD mediante mi contenedor PostgreSQL creado con Docker y se integra con una API de autenticación NextAuthjs para el manejo de usuarios.",
+        images: ["/AdminTodo's.png", "/AdminTodo's2.png", "/AdminTodo's3.png"],
+        technologies: ["React", "Tailwind", "Next.js", "PostgreSQL", "Docker"],
+        github: "https://github.com/Samirvp15/Nextjs-Todos-API",
         demo: "#"
     },
 ];
