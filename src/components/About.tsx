@@ -42,7 +42,7 @@ export default function About({ darkMode }: AboutProps) {
           'Postman', 'Prisma', 'Laravel', 'PHP', 'MySQL', 'PostgreSQL', 'MongoDB'].map((tech) => (
             <div
               key={tech}
-              className="flex items-center gap-2 p-2 border-2 border-dashed bg-white dark:bg-slate-700 border-black hover:cursor-default dark:text-white dark:border-slate-500 rounded-lg hover:border-blue-500 dark:hover:border-blue-500 hover:shadow-md hover:shadow-purple-300  transition-colors"
+              className="flex items-center justify-center gap-2 p-2 border-2 border-dashed bg-white dark:bg-slate-700 border-black hover:cursor-default dark:text-white dark:border-slate-500 rounded-lg hover:border-blue-500 dark:hover:border-blue-500 hover:shadow-md hover:shadow-purple-300  transition-colors"
             >
               <Image
                 width={30}

@@ -21,12 +21,12 @@ const projects = [
         demo: "https://up-task-team--eight.vercel.app/"
     },
     {
-        title: "UpTask Team",
-        description: "Desarrollé una aplicación web con React usando la API de TMDB, con vistas personalizables y scroll infinito. Implementé inicio de sesión con TMDB, enfocándome en buenas prácticas y diseño escalable.",
-        images: ["/UpTaskTeam1.png", "/UpTaskTeam2.png", "/UpTaskTeam3.png", "/UpTaskTeam4.png", "/UpTaskTeam5.png"],
-        technologies: ["React", "Tailwind", "Node.js", "Express.js", "MongoDB"],
-        github: "https://github.com/Samirvp15/UpTaskTeam-Frontend",
-        demo: "https://up-task-team--eight.vercel.app/"
+        title: "REST API Node-React-TS",
+        description: "Implementé una REST API con Node.js y Express.js, utilizando TypeScript para el desarrollo de la API. La API permite realizar operaciones CRUD usando Docker para la creacion de un contenedor PostgreSQL y se integra con un frontend desarrollado en React.",
+        images: ["/restapi-ts-node5.png", "/restapi-ts-node6.png", "/restapi-ts-node.png", "/restapi-ts-node2.png", "/restapi-ts-node3.png", "/restapi-ts-node4.png"],
+        technologies: ["React", "Tailwind", "Node.js", "Express.js", "PostgreSQL", "Sequelize" ,"Docker"],
+        github: "https://github.com/Samirvp15/FrontendPERN-NodeTS",
+        demo: "#"
     },
 ];
 
@@ -49,11 +49,11 @@ export default function Projects({ darkMode }: ProjectsProps) {
                         {projects.map((project, index) => (
                             <div
                                 key={index}
-                                className="bg-slate-50 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-transform"
+                                className="bg-slate-50 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-transform "
                             >
                                 {/* Carrusel */}
                                 <div className="relative">
-                                    <Carousel className="w-full max-w-full shadow-sm">
+                                    <Carousel className="w-full shadow-sm">
                                         <CarouselContent>
                                             {project.images?.map((image, index) => (
                                                 <CarouselItem key={index}>
@@ -63,7 +63,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
                                                             height={400}
                                                             src={image} // Usar la URL o ruta de la imagen actual
                                                             alt={project.title}
-                                                            className="w-full object-cover rounded-lg"
+                                                            className="w-full h-[400px]  object-cover rounded-lg"
                                                         />
                                                     </div>
                                                 </CarouselItem>
