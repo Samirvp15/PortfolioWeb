@@ -38,7 +38,7 @@ export default function About({ darkMode }: AboutProps) {
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-4 pt-8">
-        {['React', 'Next.js', 'Tailwind', 'Node.js', 'Express.js',
+        {['React', 'Next.js', 'Tailwind', 'Node.js', 'Express.js','ViteJS',
           'Postman', 'Prisma', 'Laravel', 'PHP', 'MySQL', 'PostgreSQL', 'MongoDB'].map((tech) => (
             <div
               key={tech}

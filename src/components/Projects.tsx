@@ -15,24 +15,32 @@ const projects = [
         title: "UpTask Team",
         description: `Desarrollé una plataforma de gestión de proyectos web, diseñada para ayudar a equipos a colaborar de manera eficiente, organizar tareas y garantizar el cumplimiento de los objetivos del proyecto. 
         Incluye herramientas para planificar, asignar y supervisar roles y actividades del proyecto asignado.`,
-        images: ["/UpTaskTeam1.png", "/UpTaskTeam2.png", "/UpTaskTeam3.png", "/UpTaskTeam4.png", "/UpTaskTeam5.png"],
+        images: ["/projectsImages/UpTaskTeam1.png", "/projectsImages/UpTaskTeam2.png", "/projectsImages/UpTaskTeam3.png", "/projectsImages/UpTaskTeam4.png", "/projectsImages/UpTaskTeam5.png"],
         technologies: ["React", "Tailwind", "Node.js", "Express.js", "MongoDB"],
         github: "https://github.com/Samirvp15/UpTaskTeam-Frontend",
         demo: "https://up-task-team--eight.vercel.app/"
     },
     {
-        title: "REST API Node-React-TS",
+        title: "Chat MS",
         description: "Implementé una REST API con Node.js y Express.js, utilizando TypeScript para el desarrollo de la API. La API permite realizar operaciones CRUD usando Docker para la creacion de un contenedor PostgreSQL y se integra con un frontend desarrollado en React.",
-        images: ["/restapi-ts-node5.png", "/restapi-ts-node6.png", "/restapi-ts-node.png", "/restapi-ts-node2.png", "/restapi-ts-node3.png", "/restapi-ts-node4.png"],
-        technologies: ["React", "Tailwind", "Node.js", "Express.js", "PostgreSQL", "Swagger", "Sequelize", "Docker"],
-        github: "https://github.com/Samirvp15/FrontendPERN-NodeTS",
-        demo: "#"
+        images: ["/projectsImages/chatms01.png","/projectsImages/chatms02.png","/projectsImages/chatms03.png","/projectsImages/chatms04.png","/projectsImages/chatms05.png","/projectsImages/chatms06.png","/projectsImages/chatms07.png","/projectsImages/chatms08.png"],
+        technologies: ["React", "Tailwind", "Node.js", "Express.js", "MongoDB", "Redux"],
+        github: "https://github.com/Samirvp15/ChatMS-Frontend",
+        demo: "https://chat-ms.vercel.app/email"
     },
     {
-        title: "REST API Node-React-TS",
+        title: "Products Management",
+        description: "Implementé una REST API con Node.js y Express.js, utilizando TypeScript para el desarrollo de la API. La API permite realizar operaciones CRUD usando Docker para la creacion de un contenedor PostgreSQL y se integra con un frontend desarrollado en React.",
+        images: ["/projectsImages/restapi-ts-node5.png", "/projectsImages/restapi-ts-node6.png", "/projectsImages/restapi-ts-node.png", "/projectsImages/restapi-ts-node2.png", "/projectsImages/restapi-ts-node3.png", "/projectsImages/restapi-ts-node4.png"],
+        technologies: ["React", "Tailwind", "Node.js", "Express.js", "PostgreSQL", "Swagger", "Sequelize", "Docker"],
+        github: "https://github.com/Samirvp15/FrontendPERN-NodeTS",
+        demo: "https://frontend-pern-node-ts.vercel.app/"
+    },
+    {
+        title: "Admin Products System",
         description: "Usando Nextjs y TypeScript, desarrollé una aplicación web que permite realizar operaciones CRUD mediante mi contenedor PostgreSQL creado con Docker y se integra con una API de autenticación NextAuthjs para el manejo de usuarios.",
-        images: ["/AdminTodo's.png", "/AdminTodo's2.png", "/AdminTodo's3.png"],
-        technologies: ["React", "Tailwind", "Next.js", "PostgreSQL", "Docker"],
+        images: ["/projectsImages/AdminTodo's.png", "/projectsImages/AdminTodo's2.png", "/projectsImages/AdminTodo's3.png"],
+        technologies: ["React", "Tailwind", "Next.js", "PostgreSQL", "Docker","Prisma"],
         github: "https://github.com/Samirvp15/Nextjs-Todos-API",
         demo: "#"
     },
@@ -71,7 +79,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
                                                             height={400}
                                                             src={image} // Usar la URL o ruta de la imagen actual
                                                             alt={project.title}
-                                                            className="w-full h-[400px]  object-cover rounded-lg"
+                                                            className="w-full h-[400px] object-contain rounded-lg"
                                                         />
                                                     </div>
                                                 </CarouselItem>
