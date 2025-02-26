@@ -22,11 +22,19 @@ const projects = [
     },
     {
         title: "Chat MS",
-        description: "Implementé una REST API con Node.js y Express.js, utilizando TypeScript para el desarrollo de la API. La API permite realizar operaciones CRUD usando Docker para la creacion de un contenedor PostgreSQL y se integra con un frontend desarrollado en React.",
+        description: "Desarrollé una aplicación web de mensajería instantánea con Socket.io, que permite a los usuarios enviar mensajes de texto, imágenes y videos adjuntos. La aplicación se integra con un servidor Nodejs para el envío de mensajes y un servidor de Cloudinary para el almacenamiento de archivos adjuntos.",
         images: ["/projectsImages/chatms01.png","/projectsImages/chatms02.png","/projectsImages/chatms03.png","/projectsImages/chatms04.png","/projectsImages/chatms05.png","/projectsImages/chatms06.png","/projectsImages/chatms07.png","/projectsImages/chatms08.png"],
         technologies: ["React", "Tailwind", "Node.js", "Express.js", "MongoDB", "Redux"],
         github: "https://github.com/Samirvp15/ChatMS-Frontend",
         demo: "https://chat-ms.vercel.app/email"
+    },
+    {
+        title: "Netflix Clone",
+        description: "Desarrollé una aplicación web que replica la interfaz de Netflix, permitiendo a los usuarios registrarse, iniciar sesión y ver una lista de películas y series. La aplicación se integra con una API REST desarrollada con Node.js y Express.js y que se obtiene los datos mediante la API TMDB.",
+        images: ["/projectsImages/netflix01.png", "/projectsImages/netflix02.png", "/projectsImages/netflix03.png", "/projectsImages/netflix04.png", "/projectsImages/netflix05.png","/projectsImages/netflix06.png","/projectsImages/netflix07.png"],
+        technologies: ["React", "Tailwind", "Node.js", "Express.js", "PostgreSQL"],
+        github: "https://github.com/Samirvp15/Netflix-MERN",
+        demo: "https://netflix-mern-n46g.onrender.com/"
     },
     {
         title: "Products Management",
@@ -76,7 +84,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
                                                     <div className="p-6">
                                                         <Image
                                                             width={600}
-                                                            height={400}
+                                                            height={600}
                                                             src={image} // Usar la URL o ruta de la imagen actual
                                                             alt={project.title}
                                                             className="w-full h-[400px] object-contain rounded-lg"
