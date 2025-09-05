@@ -38,6 +38,14 @@ const certificates = [
         institution: "Udemy"
     },
     {
+        image: "/certifications/courseraSoftware.png",
+        pdf: "/certifications/CourseraSoftware.pdf",
+        title: "IBM: Introduction to Software Engineering",
+        description: "Curso basado en los principios de la ingeniería de software, el ciclo de vida del desarrollo de software (SDLC) y las herramientas, tecnologías y pilas de desarrollo de software.",
+        date: "Agosto 2024",
+        institution: "Coursera"
+    },
+    {
         image: "/certifications/excelUdemy.png",
         pdf: "/certifications/UdemyExcel.pdf",
         title: "Microsoft Office Specialist: Microsoft Excel",

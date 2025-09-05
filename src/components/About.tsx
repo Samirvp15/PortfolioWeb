@@ -18,10 +18,9 @@ export default function About({ darkMode }: AboutProps) {
       <p className=" my-8 xl:my-0 sm:my-8 md:my-4 lg:my-1 text-lg text-gray-900 dark:text-gray-300">
         Soy desarrollador Full Stack con experiencia en Front-End y Back-End.
         Me especializo en crear interfaces dinámicas utilizando React y Next.js,
-        y desarrollar soluciones robustas con Node.js y Express. Comprometido con
-        el aprendizaje continuo, me satisface brindar soluciones a través de propuestas innovadoras para
+        y desarrollar soluciones robustas con Node.js y Express. Además, tengo sólidos conocimientos en bases de datos relacionales y no relacionales como MySQL, Microsoft SQL Server, PostgreSQL y MongoDB.
+        Comprometido con el aprendizaje continuo, me satisface brindar soluciones a través de propuestas innovadoras para
         un verdadero impacto en la experiencia de los usuarios.
-
       </p>
 
       <div className=" flex gap-4 justify-center sm:justify-start flex-row items-center flex-wrap">
@@ -38,7 +37,7 @@ export default function About({ darkMode }: AboutProps) {
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-4 pt-8">
-        {['React', 'Next.js', 'Tailwind', 'Node.js', 'Express.js','ViteJS',
+        {['React', 'Next.js', 'Tailwind', 'Node.js', 'Express.js', 'ViteJS',
           'Postman', 'Prisma', 'Laravel', 'PHP', 'MySQL', 'PostgreSQL', 'MongoDB'].map((tech) => (
             <div
               key={tech}
