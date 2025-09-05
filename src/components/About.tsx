@@ -25,7 +25,7 @@ export default function About({ darkMode }: AboutProps) {
       </p>
 
       <div className=" flex gap-4 justify-center sm:justify-start flex-row items-center flex-wrap">
-        <a href="/cv.pdf" download={'cv.pdf'} className="flex items-center gap-2 px-4 py-2 font-bold bg-white text-black hover:bg-indigo-600 hover:text-white border-2 border-r-4 border-b-4 border-black dark:border-gray-400 rounded-lg  transition-colors">
+        <a href="/CV_SamirVergara.pdf" download={'CV_SamirVergara.pdf'} className="flex items-center gap-2 px-4 py-2 font-bold bg-white text-black hover:bg-indigo-600 hover:text-white border-2 border-r-4 border-b-4 border-black dark:border-gray-400 rounded-lg  transition-colors">
           <Download size={20} />
           Descargar CV
         </a>

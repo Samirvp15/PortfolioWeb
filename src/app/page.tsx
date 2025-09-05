@@ -2,7 +2,8 @@
 
 import About from "@/components/About";
 import Certifications from "@/components/Certifications";
-import Experiences from "@/components/Experiences";
+//import Experiences from "@/components/Experiences";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Projects from "@/components/Projects";
 
@@ -41,6 +42,9 @@ export default function Homepage() {
           {/** CERTIFICATIONS */}
           <Certifications darkMode={darkMode}/>
 
+          
+          {/** FOOTER */}
+          <Footer />
 
           {/* <div className="hidden lg:block">
             <div className="w-96 h-96 rounded-full border-2">
