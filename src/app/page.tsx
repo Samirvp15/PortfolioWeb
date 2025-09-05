@@ -1,6 +1,7 @@
 "use client"
 
 import About from "@/components/About";
+import Certifications from "@/components/Certifications";
 import Experiences from "@/components/Experiences";
 import Header from "@/components/Header";
 import Projects from "@/components/Projects";
@@ -31,11 +32,14 @@ export default function Homepage() {
           {/** ABOUT */}
           <About darkMode={darkMode} />
 
-          {/** EXPERIENCE */}
-          <Experiences />
+          {/** EXPERIENCE 
+          <Experiences />*/}
 
           {/** PROJECTS */}
           <Projects  darkMode={darkMode}/>
+
+          {/** CERTIFICATIONS */}
+          <Certifications darkMode={darkMode}/>
 
 
           {/* <div className="hidden lg:block">
@@ -47,6 +51,7 @@ export default function Homepage() {
               />
             </div>
           </div> */}
+         
         </div>
       </main>
     </div>
