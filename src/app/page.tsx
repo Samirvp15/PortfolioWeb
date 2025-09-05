@@ -43,6 +43,7 @@ export default function Homepage() {
           <Certifications darkMode={darkMode}/>
 
           
+          
           {/** FOOTER */}
           <Footer />
 
