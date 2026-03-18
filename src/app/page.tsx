@@ -6,7 +6,7 @@ import Experiences from "@/components/Experiences";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Projects from "@/components/Projects";
-
+import Image from 'next/image';
 
 import { useState } from "react";
 
@@ -37,26 +37,15 @@ export default function Homepage() {
           <Experiences />
 
           {/** PROJECTS */}
-          <Projects  darkMode={darkMode}/>
+          <Projects darkMode={darkMode} />
 
           {/** CERTIFICATIONS */}
-          <Certifications darkMode={darkMode}/>
+          <Certifications darkMode={darkMode} />
 
-          
-          
+
+
           {/** FOOTER */}
           <Footer />
-
-          {/* <div className="hidden lg:block">
-            <div className="w-96 h-96 rounded-full border-2">
-              <Image
-                src="/api/placeholder/384/384"
-                alt="Developer illustration"
-                className="w-full h-full object-cover rounded-full"
-              />
-            </div>
-          </div> */}
-         
         </div>
       </main>
     </div>

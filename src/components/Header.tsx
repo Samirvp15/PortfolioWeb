@@ -39,14 +39,14 @@ export default function Header({ darkMode, toggleDarkMode }: HeaderProps) {
 
                 {/* Links */}
                 <div className={`
-    ${menuOpen ? "flex" : "hidden"}
-    flex-row gap-4 font-bold dark:text-white items-center absolute top-full left-0 w-full
-    bg-slate-100 dark:bg-gray-900 py-4 shadow-md md:shadow-none
-    md:static md:flex md:flex-row md:gap-6 md:w-auto md:bg-transparent md:dark:bg-transparent md:py-0
-    px-32
-`}>
+                    ${menuOpen ? "flex" : "hidden"}
+                    flex-row gap-4 font-bold dark:text-white items-center absolute top-full left-0 w-full
+                    bg-slate-100 dark:bg-gray-900 py-4 shadow-md md:shadow-none
+                    md:static md:flex md:flex-row md:gap-6 md:w-auto md:bg-transparent md:dark:bg-transparent md:py-0
+                    px-32
+                `}>
                     <Link href="#about" className="hover:text-blue-600 dark:hover:text-blue-500 transition-all" onClick={() => setMenuOpen(false)}>Acerca de mí</Link>
-                    {/*<Link href="#experience" className="hover:text-blue-600 dark:hover:text-blue-500">Experiencias</Link>*/}
+                    {<Link href="#experience" className="hover:text-blue-600 dark:hover:text-blue-500">Experiencias</Link>}
                     <Link href="#projects" className="hover:text-blue-600 dark:hover:text-blue-500 transition-all" onClick={() => setMenuOpen(false)}>Proyectos</Link>
                     <Link href="#certifications" className="hover:text-blue-600 dark:hover:text-blue-500 transition-all" onClick={() => setMenuOpen(false)}>Certificaciones</Link>
                     <button
