@@ -71,7 +71,7 @@ export default function About({ darkMode }: AboutProps) {
           <p className="text-lg text-center md:text-left text-gray-900 dark:text-gray-300 mb-8">
             Soy desarrollador Full Stack con experiencia en Front-End y Back-End.
             Me especializo en crear interfaces dinámicas utilizando React y Next.js,
-            y desarrollar soluciones robustas con Node.js y Express. Además, tengo
+            y desarrollar soluciones robustas con Node.js, Express,PHP y Laravel. Además, tengo
             sólidos conocimientos en bases de datos relacionales y no relacionales
             como MySQL, Microsoft SQL Server, PostgreSQL y MongoDB. Comprometido con
             el aprendizaje continuo, me satisface brindar soluciones a través de
@@ -84,6 +84,7 @@ export default function About({ darkMode }: AboutProps) {
             {[
               "React", "Next.js", "Tailwind", "Node.js", "Express.js", "ViteJS",
               "Postman", "Prisma", "Laravel", "PHP", "MySQL", "PostgreSQL", "MongoDB",
+               "Wordpress", "Shopify", "Hostinger",
             ].map((tech) => (
               <div
                 key={tech}
