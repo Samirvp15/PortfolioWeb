@@ -138,7 +138,7 @@ export default function Experiences({ darkMode }: ExperienceProps) {
 
     // Define los íconos con dark mode
     const getTechIcon = (tech: string) => {
-        const darkIcons = ["Prisma", "PHP", "Next.js", "Github", "Express.js"];
+        const darkIcons = ["Prisma", "PHP", "Next.js", "Express.js"];
         if (darkMode && darkIcons.includes(tech)) {
             return `/${tech}_dark.svg`;
         }
