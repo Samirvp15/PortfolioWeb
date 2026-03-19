@@ -8,7 +8,7 @@ const techIcons: Record<string, string> = {
     "Node.js": "/Node.js.svg",
     "Laravel": "/Laravel.svg",
     "Bootstrap": "/Bootstrap.svg",
-    "GitHub": "/Github.svg",
+    "GitHub": "/GitHub.svg",
     "Docker": "/Docker.svg",
     "Digital Ocean": "/DigitalOcean.svg",
     "Angular": "/Angular.svg",
