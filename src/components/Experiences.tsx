@@ -51,7 +51,7 @@ const experiences: Experience[] = [
         company: "NHL Decoración Comercial",
         period: "Enero 2026 - Abril 2026",
         type: "Remoto",
-        contractType: "Practicas Profesionales",
+        contractType: "Prácticas Profesionales",
         logo: "/NhlLogo.webp",
         technologies: ["React", "Tailwind", "Next.js", "Laravel", "PHP", "GitHub", "MySQL", "Hostinger"],
         description: [
@@ -67,7 +67,7 @@ const experiences: Experience[] = [
         company: "Runway 7 Fashion",
         period: "Septiembre 2025 - Diciembre 2025",
         type: "Presencial",
-        contractType: "Practicas Profesionales",
+        contractType: "Prácticas Profesionales",
         logo: "/Runway7Logo.png",
         technologies: ["Wordpress", "Elementor", "Shopify", "HTML", "CSS", "Javascript", "Hostinger", "Excel"],
         description: [
@@ -83,7 +83,7 @@ const experiences: Experience[] = [
         company: "ONRAN S.A.C.",
         period: "Junio 2024 - Diciembre 2024",
         type: "Presencial",
-        contractType: "Practicas Profesionales",
+        contractType: "Prácticas Profesionales",
         logo: "/OnranLogo.webp",
         technologies: ["HTML", "CSS", "Javascript", "MySQL", "Excel"],
         description: [
