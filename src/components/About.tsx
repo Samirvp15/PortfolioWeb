@@ -84,7 +84,7 @@ export default function About({ darkMode }: AboutProps) {
             {[
               "React", "Next.js", "Tailwind", "Node.js", "Express.js", "ViteJS",
               "Postman", "Prisma", "Laravel", "PHP", "MySQL", "PostgreSQL", "MongoDB",
-               "Wordpress", "Shopify", "Hostinger",
+               "Wordpress", "Shopify", "Hostinger","Unity",
             ].map((tech) => (
               <div
                 key={tech}
