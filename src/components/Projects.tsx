@@ -70,9 +70,9 @@ const projects: Project[] = [
     },
     {
         title: "Beyond The Grass",
-        description: "Juego de terror y aventura en primera persona para Android. Una experiencia inmersiva que combina elementos de exploración y suspenso en un entorno tenebroso.",
+        description: "Desarrollé un videojuego 3D construido en Unity utilizando C# para la implementación de sistemas y mecánicas de gameplay. Creé y optimicé assets y modelos 3D en Blender, y diseñé elementos visuales y texturas en Krita. Implementé funcionalidades clave como interacción del jugador, sistemas de UI multilenguaje (traducción dinámica de textos, imágenes y menús según el idioma seleccionado) y shaders en Unity para efectos visuales. Finalmente, publiqué y distribuí el juego en Google Play Store.",
         images: [],
-        technologies: ["Unity 3D"],
+        technologies: ["Unity", "Blender", "Krita", "C Sharp", "Google Play"],
         github: "https://github.com/Samirvp15/BeyondTheGrass",
         demo: "https://salexvg.itch.io/beyond-the-grass",
         category: 'videogames',
@@ -80,13 +80,13 @@ const projects: Project[] = [
     },
     {
         title: "Blast Balloon",
-        description: "Juego casual para Android que desafía a los jugadores a explotar globos en un entorno dinámico y divertido. Perfecto para jugar en cualquier momento.",
+        description: "Desarrollé un videojuego móvil casual creado en Unity implementando mecánicas arcade, sistemas de puntuación y progresión de niveles. Diseñé interfaces visuales, efectos y elementos gráficos coloridos enfocados en una experiencia dinámica y accesible para dispositivos móviles. Implementé power-ups, patrones de aparición de enemigos/obstáculos y efectos visuales. Finalmente, publiqué y distribuí el juego en Google Play Store.",
         images: [],
-        technologies: ["Unity"],
+        technologies: ["Unity", "Blender", "Krita", "C Sharp", "Google Play"],
         github: "https://github.com/Samirvp15/BlastBalloon",
         demo: "https://salexvg.itch.io/blastballoon",
         category: 'videogames',
-        iframe: '<iframe frameborder="0" src="https://itch.io/embed/4546507?bg_color=d4ebfb&fg_color=222222&link_color=fa5c5c&border_color=3f7dff" width="552" height="167"><a href="https://salexvg.itch.io/blastballoon">Blast Balloon by Salexvg</a></iframe>'
+        iframe: '<iframe frameborder="0" src="https://itch.io/embed/4546507?linkback=true&amp;bg_color=d4ebfb&amp;fg_color=222222&amp;link_color=fa5c5c&amp;border_color=3f7dff" width="552" height="167"><a href="https://salexvg.itch.io/blastballoon">Blast Balloon by Salexvg</a></iframe>'
     },
 ];
 
@@ -112,7 +112,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
                         {[
-                            { key: 'website', label: 'Website' },
+                            { key: 'website', label: 'Websites' },
                             { key: 'videogames', label: 'Videogames' },
                         ].map((category) => {
                             const active = selectedCategory === category.key;
@@ -121,7 +121,7 @@ export default function Projects({ darkMode }: ProjectsProps) {
                                     key={category.key}
                                     type="button"
                                     onClick={() => setSelectedCategory(category.key as 'website' | 'videogames')}
-                                    className={`px-6 py-3 rounded-full font-medium transition-all ${active ? 'bg-black text-white shadow-lg shadow-purple-200 dark:bg-white dark:text-black' : 'bg-white text-gray-700 border border-gray-300 hover:bg-slate-100 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-700 dark:hover:bg-gray-700'}`}
+                                    className={`px-6 py-3 rounded-full font-medium transition-all ${active ? 'bg-black text-white shadow-md shadow-purple-200 dark:bg-white dark:text-black' : 'bg-white text-gray-700 border border-gray-300 hover:bg-slate-100 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-700 dark:hover:bg-gray-700'}`}
                                 >
                                     {category.label}
                                 </button>
