@@ -20,7 +20,7 @@ export default function About({ darkMode }: AboutProps) {
           <h1 className="text-4xl font-extrabold tracking-tight leading-none text-center md:text-left md:text-5xl xl:text-6xl text-gray-900 mb-4 dark:text-white whitespace-nowrap">
             Soy{" "}
             <span className="text-blue-600 dark:text-blue-400">
-              Samir Alexander
+              Samir Vergara
             </span>
           </h1>
 
