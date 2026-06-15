@@ -16,14 +16,24 @@ export default function Header({ darkMode, toggleDarkMode }: HeaderProps) {
             <nav className="sticky top-0 flex flex-col md:flex-row justify-between items-center py-4 px-6 bg-slate-100 dark:bg-gray-900 shadow-sm z-50">
                 {/* Logo */}
                 <div className="text-xl font-bold dark:text-white mb-2 md:mb-0 flex-1 flex justify-center md:justify-start px-6 md:px-40">
-                    <Image
-                        src={darkMode ? "/projectsImages/logoSalexDevDark.png" : "/projectsImages/logoSalexDev.png"}
-                        alt="Dev Logo"
-                        width={192}
-                        height={80}
-                        className="inline-block w-32 h-12 sm:w-48 sm:h-20 align-middle object-contain"
-                        priority
-                    />
+                    <div className="relative w-32 h-12 sm:w-48 sm:h-20">
+                        <Image
+                            src="/projectsImages/logoSalexDev.png"
+                            alt="Dev Logo"
+                            width={192}
+                            height={80}
+                            className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-300 ease-in-out ${darkMode ? "opacity-0" : "opacity-100"}`}
+                            priority
+                        />
+                        <Image
+                            src="/projectsImages/logoSalexDevDark.png"
+                            alt="Dev Logo"
+                            width={192}
+                            height={80}
+                            className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-300 ease-in-out ${darkMode ? "opacity-100" : "opacity-0"}`}
+                            priority
+                        />
+                    </div>
                 </div>
 
                 {/* Hamburger menu for mobile */}
@@ -54,7 +64,7 @@ export default function Header({ darkMode, toggleDarkMode }: HeaderProps) {
                         className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors ml-2"
                         aria-label="Cambiar modo"
                     >
-                        {darkMode ? <Sun color="#ffffff" size={25} /> : <Moon size={25} />}
+                        {darkMode ? <Sun className="text-white transition-colors duration-300" size={25} /> : <Moon className="transition-colors duration-300" size={25} />}
                     </button>
                 </div>
             </nav>

@@ -16,8 +16,16 @@ export default function Homepage() {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    document.documentElement.classList.toggle('dark');
+    const apply = () => {
+      setDarkMode((prev) => !prev);
+      document.documentElement.classList.toggle("dark");
+    };
+
+    if (typeof document !== "undefined" && "startViewTransition" in document) {
+      document.startViewTransition(apply);
+    } else {
+      apply();
+    }
   };
 
 

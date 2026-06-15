@@ -14,6 +14,7 @@ interface Project {
     title: string;
     description: string;
     images: string[];
+    coverImage?: string;
     technologies: string[];
     github: string;
     demo: string;
@@ -88,6 +89,26 @@ const projects: Project[] = [
         category: 'videogames',
         iframe: '<iframe frameborder="0" src="https://itch.io/embed/4546507?linkback=true&amp;bg_color=d4ebfb&amp;fg_color=222222&amp;link_color=fa5c5c&amp;border_color=3f7dff" width="552" height="167"><a href="https://salexvg.itch.io/blastballoon">Blast Balloon by Salexvg</a></iframe>'
     },
+    {
+        title: "Chess Arena",
+        description: "Desarrollé un videojuego de ajedrez para navegador con tablero interactivo y arrastre de piezas. Implementé la lógica de movimientos con chess.js, animaciones con Framer Motion e interfaz responsive con React y Tailwind CSS. El juego valida las reglas del ajedrez en tiempo real y permite jugar partidas de forma fluida desde el navegador.",
+        images: [],
+        coverImage: "/projectsImages/chessArenaCover.png",
+        technologies: ["React", "Tailwind"],
+        github: "https://github.com/Samirvp15/ChessArenaGame",
+        demo: "https://chess-arena-game.vercel.app/",
+        category: 'videogames',
+    },
+    {
+        title: "Ascendants Warfront",
+        description: "Desarrollé un videojuego de batalla por cartas con mecánica de lanes, donde los jugadores despliegan unidades como Scout, Acolyte, Soldier y Guardian para enfrentarse en combate estratégico. Implementé sistemas de UI, tutorial interactivo con react-joyride e internacionalización con i18next. Construido con React, Vite y Tailwind CSS.",
+        images: [],
+        coverImage: "/projectsImages/ascendantsWarfrontCover.png",
+        technologies: ["React", "Tailwind"],
+        github: "https://github.com/Samirvp15/Ascendants-Warfront",
+        demo: "https://ascendants-warfront.vercel.app/",
+        category: 'videogames',
+    },
 ];
 
 interface ProjectsProps {
@@ -145,10 +166,20 @@ export default function Projects({ darkMode }: ProjectsProps) {
                                     key={index}
                                     className="bg-slate-50 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-transform "
                                 >
-                                {/* Carrusel o Iframe */}
+                                {/* Carrusel, portada o iframe */}
                                 <div className="relative bg-gray-100 dark:bg-gray-700 overflow-x-auto">
                                     {project.iframe ? (
                                         <div className="p-6 flex items-center justify-center min-h-[200px]" dangerouslySetInnerHTML={{ __html: project.iframe }} />
+                                    ) : project.coverImage ? (
+                                        <div className="p-6 flex items-center justify-center min-h-[400px]">
+                                            <Image
+                                                width={600}
+                                                height={400}
+                                                src={project.coverImage}
+                                                alt={project.title}
+                                                className="w-full h-[400px] object-contain rounded-lg"
+                                            />
+                                        </div>
                                     ) : (
                                         <Carousel className="w-full shadow-sm">
                                             <CarouselContent>
